@@ -1,15 +1,22 @@
-function isPrime(num) {}
+// 23.05.08 강의 봄
+function isPrime(num) {
+  if (num === 1) return false;
+  // .sqrt() : x의 제곱근의 비음수 값
+  for (let i = 2; i <= parseInt(Math.sqrt(num)); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
 function solution(arr) {
-  let answer,
-    rev = "";
+  let answer = [];
   for (let x of arr) {
-    let tmp = x;
-    rev = "";
-    while (tmp) {
-      rev += tmp % 10;
-      tmp = Math.floor(tmp / 10);
+    let res = 0;
+    while (x) {
+      let t = x % 10;
+      res = res * 10 + t;
+      x = parseInt(x / 10);
     }
-    console.log(Number(rev));
+    if (isPrime(res)) answer.push(res);
   }
   return answer;
 }
