@@ -3,10 +3,12 @@ function solution(m, arr) {
   let lt = 0;
   let sum = 0;
   for (let rt = 0; rt < arr.length; rt++) {
-    if (sum < m) sum += arr[rt];
-    else if (sum > m) sum -= arr[lt++];
-    else answer++;
-    console.log(sum);
+    sum += arr[rt];
+    if (sum === m) answer++;
+    while (sum >= m) {
+      sum -= arr[lt++];
+      if (sum === m) answer++;
+    }
   }
   return answer;
 }
