@@ -1,16 +1,15 @@
 function solution(m, arr) {
   let answer = 0;
-  let li = 0;
-  let ri = 0;
-  let sum = arr[ri];
-  while (ri < arr.length) {
+  let lt = (rt = 0);
+  let sum = arr[rt];
+  while (rt < arr.length) {
     if (sum <= m) {
-      answer += ri - li + 1;
-      ri++;
-      sum += arr[ri];
+      answer += rt - lt + 1;
+      rt++;
+      sum += arr[rt];
     } else {
-      sum -= arr[li];
-      li++;
+      sum -= arr[lt];
+      lt++;
     }
   }
   return answer;
