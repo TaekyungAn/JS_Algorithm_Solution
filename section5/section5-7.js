@@ -1,3 +1,4 @@
+// 아나그램(해쉬)
 // 23.05.22 강의
 function solution(str1, str2) {
   let answer = "YES";
