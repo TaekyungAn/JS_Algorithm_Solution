@@ -9,9 +9,24 @@ function solution(s) {
 let str = ["good", "time", "good", "time", "student"];
 console.log(solution(str));
 
-// 강의: .filter() 사용방법
+// 강의: .filter() +indexOf
 function solution(s) {
   let answer;
   answer = s.filter((v, i) => s.indexOf(v) === i);
+  return answer;
+}
+
+function solution(s) {
+  let answer = [];
+  for (let i = 0; i < s.length; i++) {
+    if (s.indexOf(s[i]) === i) answer.push(s[i]);
+  }
+  return answer;
+}
+
+// 23.05.27 filter + includes
+function solution(s) {
+  let answer = [];
+  s.filter((item) => (!answer.includes(item) ? answer.push(item) : null));
   return answer;
 }

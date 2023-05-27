@@ -5,4 +5,9 @@ function solution(a, b, c) {
   return answer;
 }
 
+// 23.05.26
+function solution(a, b, c) {
+  if (a + b > c && b + c > a && c + a > b) return "YES";
+  else return "NO";
+}
 console.log(solution(6, 7, 11));

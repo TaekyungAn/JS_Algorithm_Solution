@@ -6,4 +6,8 @@ function solution(a, b, c) {
   else return answer;
 }
 
+// 23.05.26
+function solution(a, b, c) {
+  return Math.min(a, b, c);
+}
 console.log(solution(2, 5, 1));

@@ -22,3 +22,12 @@ function solution(s) {
 
 // 아스키코드 방법 .charCodeAt()
 // 대문자 : 65(A)~90(Z), 소문자: 97(a)~122(z)
+
+// 23.05.27
+function solution(s) {
+  let count = 0;
+  for (let x of s) {
+    if (x.charCodeAt() < 91 && x.charCodeAt() > 64) count++;
+  }
+  return count;
+}

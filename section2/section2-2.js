@@ -26,3 +26,17 @@ function solution(arr) {
   }
   return answer;
 }
+
+// 23.05.27
+function solution(arr) {
+  let answer = [arr[0]];
+  let max = 0;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      answer.push(arr[i]);
+      max = arr[i];
+    }
+  }
+  console.log(answer);
+  return answer.length;
+}

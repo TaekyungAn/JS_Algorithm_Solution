@@ -19,3 +19,19 @@ function solution(s) {
   }
   return answer;
 }
+
+// 23.05.27
+function solution(s) {
+  return s.toUpperCase();
+}
+
+function solution(s) {
+  let answer = "";
+  for (let x of s) {
+    let num = x.charCodeAt();
+    if (96 < num && num < 123) {
+      answer += String.fromCharCode(num - 32);
+    } else answer += x;
+  }
+  return answer;
+}

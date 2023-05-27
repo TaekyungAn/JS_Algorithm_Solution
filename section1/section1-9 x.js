@@ -30,3 +30,20 @@ function solution(s) {
   answer = answer.replace(/A/g, "#"); // g= 전역
   return answer;
 }
+
+// 23.05.26 X
+function solution(s) {
+  return s.replace(/A/g, "#");
+}
+
+// 이거 안되나? 왜 안되지
+/*
+function solution(s) {
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "A") {
+      s[i] = "#";
+    }
+  }
+  return s;
+}
+*/

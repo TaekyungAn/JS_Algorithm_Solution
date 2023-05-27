@@ -20,3 +20,14 @@ function solution(s) {
   return answer;
 }
 // substr(자르기시작인덱스,자를개수)
+
+// 23.05.27
+function solution(s) {
+  const num = s.length;
+  if (num % 2) {
+    const forodd = Math.floor(num / 2);
+    return s[forodd];
+  } else {
+    return s[num / 2 - 1] + s[num / 2];
+  }
+}

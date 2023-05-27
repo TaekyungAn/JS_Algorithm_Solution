@@ -16,5 +16,13 @@ function solution(arr) {
   return answer;
 }
 
+// 23.05.23
+function solution(arr) {
+  // arr.sort((a, b) => b - a);
+  // return arr.at(-1);
+  arr.sort((a, b) => a - b);
+  return arr[0];
+}
+
 let arr = [5, 7, 1, 3, 2, 9, 11];
 console.log(solution(arr));

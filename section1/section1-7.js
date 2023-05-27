@@ -8,5 +8,15 @@ function solution(day, arr) {
   return answer;
 }
 
+// 23.05.26
+function solution(day, arr) {
+  let count = 0;
+  let i = 0;
+  while (i < arr.length) {
+    if (arr[i] % 10 === day) count++;
+    i++;
+  }
+  return count;
+}
 arr = [25, 23, 11, 47, 53, 17, 33];
 console.log(solution(3, arr));

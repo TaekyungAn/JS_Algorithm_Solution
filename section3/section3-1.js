@@ -20,3 +20,14 @@ function solution(s) {
   if (lower.split("").reverse().join("") !== lower) return "NO";
   return answer;
 }
+
+// 23.05.27
+function solution(s) {
+  let lowerCase = s.toLowerCase();
+  let reverse = "";
+  for (let i = s.length - 1; i >= 0; i--) {
+    reverse += lowerCase[i];
+  }
+  if (lowerCase === reverse) return "YES";
+  else return "NO";
+}

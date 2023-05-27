@@ -37,3 +37,10 @@ function solution(arr) {
   answer.push(min);
   return answer;
 }
+
+function solution(arr) {
+  const oddNum = arr.filter((item) => item % 2);
+  const sum = oddNum.reduce((a, c) => a + c, 0);
+  const min = Math.min(...oddNum);
+  return [sum, min];
+}
