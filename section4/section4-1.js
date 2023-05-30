@@ -41,3 +41,6 @@ function solution(n, arr) {
   }
   return answer;
 }
+
+// 23.05.27
+function solution(n, arr) {}
