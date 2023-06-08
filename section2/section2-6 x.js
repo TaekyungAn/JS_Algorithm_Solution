@@ -12,6 +12,7 @@ function solution(arr) {
     }
     answer = Math.max(answer, row, column);
   }
+
   row = column = 0;
   for (let i = 0; i < n; i++) {
     row += arr[i][i];
@@ -58,7 +59,8 @@ function solution(arr) {
   return answer;
 }
 
-function solution2(arr) {
+// 다른사람풀이
+function solution(arr) {
   let answer = Number.MIN_SAFE_INTEGER;
   let n = arr.length;
   let sum1 = (sum2 = 0);
