@@ -1,3 +1,4 @@
+// 23.06.선택정렬
 function solution(arr) {
   let answer = arr;
   for (let i = 0; i < arr.length - 1; i++) {
